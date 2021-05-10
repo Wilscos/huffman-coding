@@ -16,7 +16,18 @@ This implementation, given a string in input, returns the optimal binary code by
 |    h   |    110   |
 |    e   |    111   |
 
-with _Expected Length_ = **2\.33** and _Entropy_ = **2\.25**. The formulas for the these two values are $$E[l(X)] = \sum_{i}^{n} p_{i}l_{i}$$ for the expected length and $$H(X) = \sum_{i}^{n} p_{i}\log\frac{1}{p_{i}}$$ for the entropy. You can call the following attributes:
+with _Expected Length_ = **2\.33** and _Entropy_ = **2\.25**. The formulas for the these two values are 
+
+```
+$E[l(X)] = \sum_{i}^{n} p_{i}l_{i}$
+```
+
+for the expected length and 
+
+```
+$H(X) = \sum_{i}^{n} p_{i}\log\frac{1}{p_{i}}$
+```
+for the entropy. You can call the following attributes:
 
 - _string_: it returns the input string or 'Hello!' if nothing is no string was given;
 - _probabilities_: it returns a dictionary with the frequency of the symbols (characters) of the given string;
